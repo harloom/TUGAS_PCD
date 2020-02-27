@@ -36,4 +36,12 @@ public class ImagePanel  extends JPanel{
         this.bfImage = image;
     }
     
+    public int getPixel(int x , int y){
+        if(bfImage !=null){
+            return bfImage.getRGB(x, y);
+        }
+        
+        return 0 ;
+    }
+    
 }

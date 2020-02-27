@@ -4,6 +4,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
@@ -22,7 +24,7 @@ import pcd_ilhamsolehudin.ImagePanel;
  *
  * @author LAB1A
  */
-public class MainFramePcd extends JFrame {
+public class MainFramePcd extends JFrame implements MouseListener{
 
   
     
@@ -66,12 +68,45 @@ public class MainFramePcd extends JFrame {
         
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+     
         
     }
+    
+    
+    
+      
+    
     
       public static void main(String[] args) {
         // TODO code application logic here
              new  MainFramePcd();
+    }
+
+
+    @Override
+    public void mouseClicked(MouseEvent me) {
+       Object src = me.getSource();
+       if(src.equals(mPanel)){
+           
+       }
+    }
+
+
+    public void mousePressed(MouseEvent me) {
+       
+    }
+
+    public void mouseReleased(MouseEvent me) {
+        
+    }
+
+    public void mouseEntered(MouseEvent me) {
+        
+    }
+
+
+    public void mouseExited(MouseEvent me) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
